@@ -1,0 +1,1 @@
+{{ Form::select($name, $list, $value, array_merge(['class' => 'custom-select','multiple' => 1]) ) }}

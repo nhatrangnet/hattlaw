@@ -1,0 +1,209 @@
+.dataTables_length {
+  display: inline-block;
+  margin: 0.7vmin 0 0 2vmin;
+}
+
+.dataTables_length select {
+  width: 100px;
+}
+
+.dataTables_paginate {
+  padding-top: 0 !important;
+}
+
+.thead-blue th {
+  background-color: #102b46;
+  color: #b8c7ce;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  color: #ff0000 !important;
+}
+
+table.dataTable tbody th,
+table.dataTable tbody td {
+  padding: 5px 6px;
+}
+
+.dashboardcode-bsmultiselect li.badge {
+  padding: 4px 10px 1px !important;
+  border: 1px dotted;
+  background: #f0f9ff;
+  margin-right: 2px;
+}
+
+.dashboardcode-bsmultiselect li.badge button {
+  line-height: 1em;
+  margin-left: 3px;
+}
+
+.dashboardcode-bsmultiselect .px-2 {
+  border: 1px dotted;
+  border-radius: 4px;
+}
+
+.dashboardcode-bsmultiselect .px-2:nth-child(even) {
+  background: #f4fffd;
+}
+
+.switchToggle input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.switchToggle label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 85px;
+  max-width: 85px;
+  height: 30px;
+  background: #d1d1d1;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+.switchToggle label:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 26px;
+  height: 26px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+.switchToggle input:checked + label,
+.switchToggle input:checked + input + label {
+  background: #3e98d3;
+}
+
+.switchToggle input + label:before,
+.switchToggle input + input + label:before {
+  content: "No";
+  position: absolute;
+  top: 4px;
+  left: 35px;
+  width: 26px;
+  height: 26px;
+  border-radius: 90px;
+  transition: 0.3s;
+  text-indent: 0;
+  color: #fff;
+}
+
+.switchToggle input:checked + label:before,
+.switchToggle input:checked + input + label:before {
+  content: "Yes";
+  position: absolute;
+  top: 4px;
+  left: 10px;
+  width: 26px;
+  height: 26px;
+  border-radius: 90px;
+  transition: 0.3s;
+  text-indent: 0;
+  color: #fff;
+}
+
+.switchToggle input:checked + label:after,
+.switchToggle input:checked + input + label:after {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+
+.switchToggle label:active:after {
+  width: 60px;
+}
+
+.toggle-switchArea {
+  margin: 10px 0 10px 0;
+}
+
+.loading {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  padding-top: 3rem;
+  text-align: center;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 65px;
+  height: 65px;
+}
+
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 6px;
+  box-sizing: border-box;
+  border: 26px solid #cef;
+  border-color: #cef transparent #cef transparent;
+  -webkit-animation: lds-hourglass 1.2s infinite;
+          animation: lds-hourglass 1.2s infinite;
+}
+
+@-webkit-keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+            animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  50% {
+    transform: rotate(900deg);
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+            animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  50% {
+    transform: rotate(900deg);
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+.fas,
+.fa,
+.fab,
+.far {
+  margin-right: 3px;
+}
+
+table .fas,
+table .fa,
+table .fab,
+table .far {
+  margin-right: 0;
+}
+
