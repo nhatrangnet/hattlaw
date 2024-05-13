@@ -38,15 +38,15 @@ Route::get('user','Backend\DashboardController@index')->name('user.index');
 
 Route::get('get_list_birthday_user_ajax','Frontend\HomeController@get_list_birthday_user_ajax');
 
-Route::resource('cart', 'Frontend\CartController', [
-    'names' => [
-        'index' => 'cart.index',
-        'create' => 'cart.create',
-        'store' => 'cart.store',
-        'edit' => 'cart.edit',
-        // 'update' => 'cart.update',
-    ],
-]);
+// Route::resource('cart', 'Frontend\CartController', [
+//     'names' => [
+//         'index' => 'cart.index',
+//         'create' => 'cart.create',
+//         'store' => 'cart.store',
+//         'edit' => 'cart.edit',
+//         // 'update' => 'cart.update',
+//     ],
+// ]);
 
 Route::get('cart/history','Frontend\CartController@history')->name('cart.history');
 Route::get('get_list_order_ajax','Frontend\CartController@get_list_order_ajax');
